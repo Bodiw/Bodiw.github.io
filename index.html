@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Criptograma</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>CrUtils</h1>
+    <div>Como se nota que yo soy de backend jaja...</div>
+    <br />
+    <label for="textInput">Texto a Procesar</label>
+    <textarea id="textInput" rows="8" cols="80"></textarea>
+    <h2>Transposiciones</h2>
+    <div>
+      <p>
+        Introduce el texto, selecciona el tamaño de la matriz y pulsa generar cuadrícula <br />Haz click en una letra y
+        mueve el raton, vuelve a hacer click en una letra para terminar <br />Puedes volver a hacer click sobre la
+        cuadricula para otro intento<br />Si pones solo filas o columnas (o una a 0), el otro se calculará
+        automáticamente
+      </p>
+    </div>
+    <br />
+    <div id="numberFields">
+      <label for="numRows">Número de filas:</label>
+      <input type="number" id="numRows" placeholder="Número de filas" />
+      <label for="numCols">Número de columnas:</label>
+      <input type="number" id="numCols" placeholder="Número de columnas" />
+    </div>
+    <button onclick="createGrid()">Crear cuadrícula</button>
+
+    <div id="gridContainer"></div>
+
+    <p>Texto seleccionado: <span id="selectedTextOutput"></span></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

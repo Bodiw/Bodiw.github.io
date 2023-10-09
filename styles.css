@@ -1,0 +1,24 @@
+button {
+  cursor: pointer;
+}
+
+.grid-button {
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+}
+
+#gridContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(var(--num-cols) * 35px);
+}
+
+label,
+input,
+textarea,
+#gridContainer {
+  display: block; /* Hacer que los elementos ocupen toda la línea */
+  margin-bottom: 10px; /* Añadir un poco de margen inferior para separarlos */
+}
